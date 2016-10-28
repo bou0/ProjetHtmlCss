@@ -5,7 +5,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin:auto;
-    background: url("/img/img1.jpg") 0 no-repeat fixed;
+    background: url("/img/img5.jpg") 0 no-repeat fixed;
 
 }
 
@@ -50,7 +50,7 @@ header ul li a {
     align-content: center;
     margin:0;
     padding-top: 3%;
-    background: url("/img/img2.jpg") 0 no-repeat fixed;
+    /*background: rgb(155, 35, 41) fixed;*/
     width:auto;
     height: 700
 }
@@ -78,7 +78,7 @@ header ul li a {
     padding-top: 3%;
     width: 100%;
     height: 100%;
-     background: url("/img/img3.jpg") no-repeat fixed;
+     /*background: url("/img/img3.jpg") no-repeat fixed;*/
 }
 
 /* END GALERIE */
@@ -125,6 +125,7 @@ header ul li a {
 .footer{
     display: flex;
     align-content: center;
+    background: url("/img/img5.jpg") 0 no-repeat fixed;
 
 }
 .footer .contenaur a{
