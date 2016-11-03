@@ -5,7 +5,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin:auto;
-    background: url("/img/img5.jpg") 0 no-repeat fixed;
+    background: url("../img/img5.jpg") 0 no-repeat fixed;
 
 }
 
@@ -44,15 +44,18 @@ header ul li a {
 /*START Newdelhi Accueil*/
 .main #newdelhi{
 
-    display: flex;
-    flex-direction: column;
+   display: flex;
+     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    flex-wrap: wrap;
     margin:0;
-    padding-top: 3%;
-    /*background: rgb(155, 35, 41) fixed;*/
-    width:auto;
-    height: 700
+    padding-top: 10%;
+    padding-bottom: 25%;
+
+
+    width: 100%;
+    height: 100%;
+
 }
 .main #newdelhi p,h3,h4,a,strong{
     margin: auto;
@@ -61,10 +64,28 @@ header ul li a {
 /*END NEWDELHI Accueil*/
 
 /* image promo*/
-.promo{
-    margin:0% 2%;
-    width:0;
-    padding: 0;
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* image promo*/
 /* Galerie*/
@@ -75,10 +96,11 @@ header ul li a {
     justify-content: center;
     flex-wrap: wrap;
     margin:0;
-    padding-top: 3%;
+    padding-top: 9%;
+    padding-bottom: 20%;
     width: 100%;
     height: 100%;
-     /*background: url("/img/img3.jpg") no-repeat fixed;*/
+    background: url("../img/img3.jpg") no-repeat fixed;
 }
 
 /* END GALERIE */
@@ -91,10 +113,11 @@ header ul li a {
     justify-content: center;
     flex-wrap: wrap;
     margin:0;
-    padding-top: 3%;
+    padding-top: 10%;
+    padding-bottom: 20%;
     width: 100%;
     height: 100%;
-    background: url("/img/img4.jpg") 0 no-repeat fixed;
+    background: url("../img/img4.jpg") 0 no-repeat fixed;
 }
 /* END MENU */
 
@@ -105,10 +128,11 @@ header ul li a {
     flex-direction: column;
     justify-content: center;
     margin:auto;
-    padding-top: 3%;
+    padding-top: 10%;
+    padding-bottom: 20%;
     width: 100%;
     height: 100%;
-    background: url("/img/img5.jpg") 0 no-repeat fixed;
+
 }
 .main #contact p,i,a,iframe{
     margin: auto;
@@ -119,17 +143,33 @@ header ul li a {
 .main #mapp{
     width: 70%;
     height: 500px;
+    padding-top: 02%;
+
+
 }
 /* END MAP */
 /*footer*/
 .footer{
-    display: flex;
+
     align-content: center;
-    background: url("/img/img5.jpg") 0 no-repeat fixed;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    color:hsl(0, 100%, 95%);
+
 
 }
-.footer .contenaur a{
+div .footer .contenaur p {
     align-content: center;
+    text-align: center;
+    margin: auto;
+
+
 }
 
-/*footer*/
+/*footer*/@media scren and (max-widh:1280px)
+{
+    body{
+        display: :none;
+        width: auto;
+    }
+}
